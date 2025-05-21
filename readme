@@ -1,0 +1,21 @@
+mylanding/
+├── landing/
+│   ├── migrations/
+│   │   └── __init__.py
+│   ├── templates/
+│   │   └── landing/
+│   │       └── home.html         ← หน้า Landing Page (HTML)
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── tests.py
+│   ├── urls.py                   ← Routing ของแอป landing
+│   └── views.py                  ← View ฟังก์ชันที่ส่งหน้า home.html
+├── mylanding/
+│   ├── __init__.py
+│   ├── asgi.py
+│   ├── settings.py               ← ตั้งค่าโปรเจกต์ เช่น INSTALLED_APPS
+│   ├── urls.py                   ← Routing หลัก เชื่อมไปยังแอป landing
+│   └── wsgi.py
+├── manage.py
