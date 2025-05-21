@@ -1,21 +1,39 @@
-mylanding/
-├── landing/
-│   ├── migrations/
-│   │   └── __init__.py
-│   ├── templates/
-│   │   └── landing/
-│   │       └── home.html         ← หน้า Landing Page (HTML)
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── apps.py
-│   ├── models.py
-│   ├── tests.py
-│   ├── urls.py                   ← Routing ของแอป landing
-│   └── views.py                  ← View ฟังก์ชันที่ส่งหน้า home.html
-├── mylanding/
-│   ├── __init__.py
-│   ├── asgi.py
-│   ├── settings.py               ← ตั้งค่าโปรเจกต์ เช่น INSTALLED_APPS
-│   ├── urls.py                   ← Routing หลัก เชื่อมไปยังแอป landing
-│   └── wsgi.py
+Tech Stack
+
+- Django
+- Tailwind CSS
+- HTML / Bootstrap
+- SQLite / PostgreSQL
+- Docker (ถ้ามี)
+
+---
+
+Installation
+
+```bash
+# 1. Clone repo
+git clone https://github.com/username/project-name.git
+cd project-name
+
+# 2. สร้าง virtualenv และติดตั้ง dependency
+python -m venv venv
+source venv/bin/activate      # หรือ venv\Scripts\activate สำหรับ Windows
+pip install -r requirements.txt
+
+# 3. รัน migration และ start server
+python manage.py migrate
+python manage.py runserver
+
+
+📁 Folder Structure
+project/
+├── accounts/         # จัดการระบบ Login/Register
+├── main/             # หน้า Home, หน้าเว็บบริษัท
+├── templates/
+│   ├── base.html
+│   ├── home.html
+│   └── registration/
+├── static/
+├── db.sqlite3
 ├── manage.py
+└── README.md
